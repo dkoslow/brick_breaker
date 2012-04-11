@@ -56,8 +56,6 @@ public class Breakout extends GraphicsProgram {
 
 /** Number of turns */
 	private static final int NTURNS = 3;
-	
-	private static final int SPACE_BETWEEN_BRICKS = 5;
 
 /* Method: run() */
 /** Runs the Breakout program. */
@@ -69,7 +67,7 @@ public class Breakout extends GraphicsProgram {
 	private void createBricks() {
 		for ( int x = 0; x < NBRICKS_PER_ROW; x++ ) {
 			for (int y = 0; y < NBRICK_ROWS; y++ ) {
-				GRect brick = new GRect(startx, BRICK_Y_OFFSET + SPACE_BETWEEN_BRICKS + ( y * BRICK_HEIGHT ), BRICK_WIDTH, BRICK_HEIGHT );
+				GRect brick = new GRect(startx, BRICK_Y_OFFSET + ( y * BRICK_HEIGHT ), BRICK_WIDTH, BRICK_HEIGHT );
 				
 			}
 		}
