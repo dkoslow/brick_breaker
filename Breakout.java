@@ -69,7 +69,6 @@ public class Breakout extends GraphicsProgram {
 		int y = 0;
 		while ( x < NBRICKS_PER_ROW) {
 			y = 0;
-			x++;
 			while (y < NBRICK_ROWS) {
 				GRect brick = new GRect( getWidth() / 2 - ( NBRICKS_PER_ROW / 2 *BRICK_WIDTH ), BRICK_Y_OFFSET + ( y * BRICK_HEIGHT ), BRICK_WIDTH, BRICK_HEIGHT );
 				brick.setFilled(true);
@@ -78,6 +77,7 @@ public class Breakout extends GraphicsProgram {
 				add(brick);
 				y++;
 			}
+			x++;
 		}
 	}
 }
