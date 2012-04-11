@@ -67,7 +67,7 @@ public class Breakout extends GraphicsProgram {
 	private void createBricks() {
 		for ( int x = 0; x < NBRICKS_PER_ROW; x++ ) {
 			for (int y = 0; y < NBRICK_ROWS; y++ ) {
-				GRect brick = new GRect( getWidth() / 2 - NBRICKS_PER_ROW / 2 *BRICK_WIDTH, BRICK_Y_OFFSET + ( y * BRICK_HEIGHT ), BRICK_WIDTH, BRICK_HEIGHT );
+				GRect brick = new GRect( getWidth() / 2 - ( NBRICKS_PER_ROW / 2 *BRICK_WIDTH ), BRICK_Y_OFFSET + ( y * BRICK_HEIGHT ), BRICK_WIDTH, BRICK_HEIGHT );
 				
 			}
 		}
