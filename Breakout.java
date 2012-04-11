@@ -65,19 +65,14 @@ public class Breakout extends GraphicsProgram {
 //		startGame();
 	}
 	private void createBricks() {
-		int x = 0;
-		int y = 0;
-		while ( x < NBRICKS_PER_ROW) {
-			y = 0;
-			while (y < NBRICK_ROWS) {
-				GRect brick = new GRect( getWidth() / 2 - ( NBRICKS_PER_ROW / 2 *BRICK_WIDTH ), BRICK_Y_OFFSET + ( y * BRICK_HEIGHT ), BRICK_WIDTH, BRICK_HEIGHT );
+		for ( int x = 0; x < NBRICKS_PER_ROW; x++ ) {
+			for (int y = 0; y < NBRICK_ROWS; y++ ) {
+				GRect brick = new GRect( getWidth() / 2 - ( NBRICKS_PER_ROW / 2 *BRICK_WIDTH ) + BRICK_WIDTH * x, BRICK_Y_OFFSET + ( y * BRICK_HEIGHT ), BRICK_WIDTH, BRICK_HEIGHT );
 				brick.setFilled(true);
 				brick.setColor(Color.white);
 				brick.setFillColor(Color.red);
 				add(brick);
-				y++;
 			}
-			x++;
 		}
 	}
 }
