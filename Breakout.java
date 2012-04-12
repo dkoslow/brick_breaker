@@ -107,7 +107,6 @@ public class Breakout extends GraphicsProgram {
 		add(paddle);
 	}
 	public void mouseDragged(MouseEvent e) {
-		startX = paddle.getX();
 		int x;
 		x = 0;
 		if (x == 0) {
@@ -145,5 +144,5 @@ public class Breakout extends GraphicsProgram {
 	private GOval ball;
 	private GRect paddle;
 	private double paddleMovement;
-	private double startX;
+	private double startX = paddle.getX();
 }
