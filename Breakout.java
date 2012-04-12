@@ -119,7 +119,7 @@ public class Breakout extends GraphicsProgram {
 			paddleMovement = (e.getX() - lastX);
 		}
 		paddle.move(paddleMovement, 0);
-		lastX = paddle.getX();
+		lastX = e.getX();
 		x++;
 	}
 	private void startGame() {
