@@ -110,22 +110,19 @@ public class Breakout extends GraphicsProgram {
 		startX = paddle.getX();
 		int x;
 		x = 0;
-		if( paddle != null ) {
-			if (x == 0) {
-				lastX = startX;
-			}
-			if((lastX + (getX() - lastX)) <= 0) {
-					paddleMovement = (getX() - lastX);
-			} else if((lastX + PADDLE_WIDTH + (getX() - lastX)) >= getWidth()) {
-				paddleMovement = (getX() - lastX);
-			} else {
-				paddleMovement = (getX() - lastX);
-			}
-//			NOT MOVING RIGHT; MOVING WAY TOO FAST
-			paddle.move(paddleMovement, 0);
-			lastX = e.getX();
-			x++;
+		if (x == 0) {
+			lastX = startX;
 		}
+		if((lastX + (getX() - lastX)) <= 0) {
+				paddleMovement = (getX() - lastX);
+		} else if((lastX + PADDLE_WIDTH + (getX() - lastX)) >= getWidth()) {
+			paddleMovement = (getX() - lastX);
+		} else {
+			paddleMovement = (getX() - lastX);
+		}
+		paddle.move(paddleMovement, 0);
+		lastX = e.getX();
+		x++;
 	}
 	private void startGame() {
 		ball = new GOval( (getWidth() - BALL_RADIUS) / 2, (getHeight() - BALL_RADIUS) / 2, BALL_RADIUS, BALL_RADIUS );
