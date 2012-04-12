@@ -103,11 +103,11 @@ public class Breakout extends GraphicsProgram {
 	}
 	private void createPaddle() {
 		paddle = new GRect( getWidth() / 2 - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT );
-		lastX = paddle.getX();
 		paddle.setColor(Color.black);
 		add(paddle);
 	}
 	public void mouseDragged(MouseEvent e) {
+		lastX = paddle.getX();
 		if( paddle != null ) {
 			if(lastX == 0) {
 				if ((getX() - lastX) > 0) {
@@ -141,7 +141,7 @@ public class Breakout extends GraphicsProgram {
 	}
 
 	private double vx, vy;
-	private double lastX;
+	private double lastX, lastY;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private GOval ball;
 	private GRect paddle;
