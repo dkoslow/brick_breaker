@@ -119,7 +119,6 @@ public class Breakout extends GraphicsProgram {
 			lastY = e.getY();
 		}
 	}
-	
 	private void startMovement() {
 		vy = 3.0;
 		vx = rgen.nextDouble(1.0,3.0);
