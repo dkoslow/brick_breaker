@@ -61,7 +61,7 @@ public class Breakout extends GraphicsProgram {
 /** Runs the Breakout program. */
 	public void run() {
 		createBricks();
-//		createPaddle();
+		createPaddle();
 //		startGame();
 	}
 	private void createBricks() {
@@ -70,9 +70,26 @@ public class Breakout extends GraphicsProgram {
 				GRect brick = new GRect( getWidth() / 2 - ( NBRICKS_PER_ROW / 2 *BRICK_WIDTH ) + BRICK_WIDTH * x, BRICK_Y_OFFSET + ( y * BRICK_HEIGHT ), BRICK_WIDTH, BRICK_HEIGHT );
 				brick.setFilled(true);
 				brick.setColor(Color.white);
-				brick.setFillColor(Color.red);
+				switch(y) { 
+				case 0: brick.setFillColor(Color.red);
+				case 1: brick.setFillColor(Color.red);
+				case 2: brick.setFillColor(Color.orange);
+				case 3: brick.setFillColor(Color.orange);
+				case 4: brick.setFillColor(Color.yellow);
+				case 5: brick.setFillColor(Color.yellow);
+				case 6: brick.setFillColor(Color.green);
+				case 7: brick.setFillColor(Color.green);
+				case 8: brick.setFillColor(Color.cyan);
+				case 9: brick.setFillColor(Color.cyan);
+				}
+				
 				add(brick);
 			}
 		}
+	}
+	private void createPaddle() {
+		GRect paddle = new GRect( getWidth() / 2, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT );
+		paddle.setColor(Color.black);
+		add(brick);
 	}
 }
