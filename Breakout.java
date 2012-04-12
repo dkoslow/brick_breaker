@@ -106,18 +106,17 @@ public class Breakout extends GraphicsProgram {
 		paddle.setColor(Color.black);
 		add(paddle);
 	}
-	
-	private void startGame() {
-		ball = new GOval( (getWidth() - BALL_RADIUS) / 2, (getHeight() - BALL_RADIUS) / 2, BALL_RADIUS, BALL_RADIUS );
-		add(ball);
-		startMovement();
-	}
 	public void mouseMoved(MouseEvent e) {
 		if( paddle != null ) {
 			paddle.move(e.getX() - lastX, e.getY() - lastY);
 			lastX = e.getX();
 			lastY = e.getY();
 		}
+	}
+	private void startGame() {
+		ball = new GOval( (getWidth() - BALL_RADIUS) / 2, (getHeight() - BALL_RADIUS) / 2, BALL_RADIUS, BALL_RADIUS );
+		add(ball);
+		startMovement();
 	}
 	private void startMovement() {
 		vy = 3.0;
