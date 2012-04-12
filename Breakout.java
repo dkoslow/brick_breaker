@@ -140,10 +140,14 @@ public class Breakout extends GraphicsProgram {
 		while(true) {
 			ball.move(vx, vy);
 			pause(500);
-			if (ballCollision()) {
+			if (ballCollision() == true) {
 				changeBallDirection();
 			}
 		}
+	}
+	
+	private void ballCollision() {
+		
 	}
 
 	private double vx, vy;
