@@ -113,7 +113,7 @@ public class Breakout extends GraphicsProgram {
 		if (x == 0) {
 			lastX = startX;
 		}
-		if((paddle.getX() == 0) {
+		if(paddle.getX() == 0) {
 			if ((e.getX - lastX) > 0) {
 				paddleMovement = (e.getX() - lastX);
 			}
