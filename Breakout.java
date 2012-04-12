@@ -147,7 +147,7 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	private void ballCollision() {
-		topLeftBall = (ball.getX(), ball.getY());
+		topLeftBall = (5);
 		topRightBall = ball.getX()+ 2* BALL_RADIUS;
 		bottomLeftBall = ball.getX();
 		bottomRigthBall = ball.getX();
@@ -162,5 +162,5 @@ public class Breakout extends GraphicsProgram {
 	private GOval ball;
 	private GRect paddle;
 	private double paddleMovement;
-	private GPoint topLeftBall, topRightBall, bottomLeftBall, bottomRigthBall;
+	private double ballLeftX, ballRightX, ballTopY, ballBottomY;
 }
