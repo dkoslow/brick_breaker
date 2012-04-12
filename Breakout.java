@@ -140,7 +140,7 @@ public class Breakout extends GraphicsProgram {
 	}
 
 	private double vx, vy;
-	private double lastX, lastY;
+	private double lastX = paddle.getX();
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private GOval ball;
 	private GRect paddle;
