@@ -147,6 +147,8 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	private void ballCollision() {
+		topLeftBall = ball.getX();
+		
 		
 		
 	}
@@ -157,4 +159,5 @@ public class Breakout extends GraphicsProgram {
 	private GOval ball;
 	private GRect paddle;
 	private double paddleMovement;
+	private double topLeftBall, topRightBall, bottomLeftBall, bottomRigthBall;
 }
