@@ -109,10 +109,10 @@ public class Breakout extends GraphicsProgram {
 	public void mouseMoved(MouseEvent e) {
 		int x;
 		x = 0;
-//		startX = paddle.getX();
-//		if (x == 0) {
-//			lastX = startX;
-//		}
+		startX = paddle.getX();
+		if (x == 0) {
+			lastX = startX;
+		}
 		if(paddle.getX() == 0) {
 			if ((e.getX() - lastX) > 0) {
 				paddleMovement = (e.getX() - lastX);
