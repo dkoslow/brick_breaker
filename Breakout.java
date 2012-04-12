@@ -106,7 +106,7 @@ public class Breakout extends GraphicsProgram {
 		paddle.setColor(Color.black);
 		add(paddle);
 	}
-	public void mouseDragged(MouseEvent e) {
+	public void mouseMoved(MouseEvent e) {
 		int x;
 		x = 0;
 		startX = paddle.getX();
