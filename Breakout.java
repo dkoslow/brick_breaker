@@ -108,7 +108,7 @@ public class Breakout extends GraphicsProgram {
 	
 	private void startGame() {
 		add(ball);
-		startMovement();
+//		startMovement();
 	}
 	
 //	private void startMovement() {
