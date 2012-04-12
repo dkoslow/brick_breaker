@@ -147,10 +147,10 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	private void ballCollision() {
-		topLeftBall = ball.getX();
-		topRightBall
-		bottomLeftBall
-		bottomRigthBall;
+		topLeftBall = (ball.getX()+ 2* BALL_RADIUS);
+		topRightBall = ball.getX();
+		bottomLeftBall = ball.getX();
+		bottomRigthBall; = ball.getX();
 		
 		
 		
