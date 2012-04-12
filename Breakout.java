@@ -141,7 +141,7 @@ public class Breakout extends GraphicsProgram {
 			ball.move(vx, vy);
 			pause(500);
 			if (ballCollision());
-			changeBallDirection;
+			changeBallDirection();
 		}
 	}
 
