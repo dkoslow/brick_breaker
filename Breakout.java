@@ -101,7 +101,7 @@ public class Breakout extends GraphicsProgram {
 		}
 	}
 	private void createPaddle() {
-		GRect paddle = new GRect( getWidth() / 2 - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT );
+		paddle = new GRect( getWidth() / 2 - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT );
 		paddle.setColor(Color.black);
 		add(paddle);
 	}
@@ -109,20 +109,25 @@ public class Breakout extends GraphicsProgram {
 	private void startGame() {
 		ball = new GOval( (getWidth() - BALL_RADIUS) / 2, (getHeight() - BALL_RADIUS) / 2, BALL_RADIUS, BALL_RADIUS );
 		add(ball);
-//		startMovement();
+		paddleMovement();
+		startMovement();
+	}
+	private void paddleMovement() {
+		
 	}
 	
-//	private void startMovement() {
-//		vy = 3.0;
-//		vx = rgen.nextDouble(1.0,3.0);
-//		if (rgen.nextBoolean(0.5)) vx = -vx;
-//		while(true) {
-//			ball.move(vx, vy);
-//			pause(500);
-//		}
-//	}
+	private void startMovement() {
+		vy = 3.0;
+		vx = rgen.nextDouble(1.0,3.0);
+		if (rgen.nextBoolean(0.5)) vx = -vx;
+		while(true) {
+			ball.move(vx, vy);
+			pause(500);
+		}
+	}
 
 	private double vx, vy;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private GOval ball;
+	private GRect paddle;
 }
