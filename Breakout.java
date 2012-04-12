@@ -120,6 +120,7 @@ public class Breakout extends GraphicsProgram {
 			} else {
 				paddleMovement = (getX() - lastX);
 			}
+//			NOT MOVING RIGHT; MOVING WAY TOO FAST
 			paddle.move(paddleMovement, 0);
 			lastX = e.getX();
 		}
