@@ -113,7 +113,7 @@ public class Breakout extends GraphicsProgram {
 			startY = paddle.getY();
 			lastX = e.getX();
 			lastY = e.getY();
-			paddle.setBounds(x, y, width, startY()); 
+			
 		}
 	}
 	private void startGame() {
