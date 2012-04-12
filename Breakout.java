@@ -110,9 +110,13 @@ public class Breakout extends GraphicsProgram {
 		lastX = paddle.getX();
 		lastY = paddle.getY();
 		if( paddle != null ) {
-			paddle.move(e.getX() - lastX, 0);
+			if (not touching wall){
+				paddleMovement = 
+			}
+			paddle.move(paddleMovement, 0);
 			lastX = e.getX();
 			lastY = e.getY();
+			
 			
 		}
 	}
@@ -136,4 +140,5 @@ public class Breakout extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private GOval ball;
 	private GRect paddle;
+	private double paddleMovement;
 }
