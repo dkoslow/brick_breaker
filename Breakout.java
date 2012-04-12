@@ -115,14 +115,14 @@ public class Breakout extends GraphicsProgram {
 			} else {
 				return;
 			}
-		} else if((PADDLE_WIDTH + paddle.getX()) == getWidth()) {
-			if ((e.getX() - lastX) < 0) {
-				paddleMovement = (e.getX() - lastX);
-			} else {
-				return;
-			}
-		} else {
-			paddleMovement = (e.getX() - lastX);
+//		} else if((PADDLE_WIDTH + paddle.getX()) == getWidth()) {
+//			if ((e.getX() - lastX) < 0) {
+//				paddleMovement = (e.getX() - lastX);
+//			} else {
+//				return;
+//			}
+//		} else {
+//			paddleMovement = (e.getX() - lastX);
 		}
 		paddle.move(paddleMovement, 0);
 		lastX = paddle.getX();
