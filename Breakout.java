@@ -150,7 +150,7 @@ public class Breakout extends GraphicsProgram {
 		topLeftBall = (ball.getX()+ 2* BALL_RADIUS);
 		topRightBall = ball.getX();
 		bottomLeftBall = ball.getX();
-		bottomRigthBall; = ball.getX();
+		bottomRigthBall = ball.getX();
 		
 		
 		
