@@ -111,7 +111,7 @@ public class Breakout extends GraphicsProgram {
 		lastY = paddle.getY();
 		if( paddle != null ) {
 			if (not touching wall){
-				paddleMovement = 2.0
+				paddleMovement = 2.0;
 			}
 			paddle.move(paddleMovement, 0);
 			lastX = e.getX();
