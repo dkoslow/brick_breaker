@@ -106,6 +106,11 @@ public class Breakout extends GraphicsProgram {
 		add(paddle);
 	}
 	
+	private void startGame() {
+		add(ball);
+		startMovement();
+	}
+	
 	private void startMovement() {
 		vy = 3.0;
 		vx = rgen.nextDouble(1.0,3.0);
@@ -114,14 +119,6 @@ public class Breakout extends GraphicsProgram {
 			ball.move(vx, vy);
 			pause(50);
 		}
-		
-		
-		
-	}
-	
-	private void startGame() {
-		add(ball);
-		startMovement();
 	}
 	private double vx, vy;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
