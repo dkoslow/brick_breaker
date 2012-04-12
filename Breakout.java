@@ -118,7 +118,7 @@ public class Breakout extends GraphicsProgram {
 				if ((getX() - lastX) > 0) {
 					paddleMovement = (getX() - lastX);
 				}
-			if((lastX + PADDLE_WIDTH) == getWidth()) {
+			if((lastX + PADDLE_WIDTH) >= getWidth()) {
 				if (getX() - lastX < 0 ) {
 					paddleMovement = (getX() - lastX);
 				}
