@@ -110,8 +110,14 @@ public class Breakout extends GraphicsProgram {
 		GOval ball = new GOval(getWidth() / 2 - BALL_RADIUS / 2, getHeight() / 2 - BALL_RADIUS / 2, BALL_RADIUS, BALL_RADIUS );
 	}
 	
+	private void startMovement() {
+		
+		
+	}
 	
 	private void startGame() {
 		createBall();
+		startMovement();
 	}
+	private double vx, vy;
 }
