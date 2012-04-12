@@ -115,7 +115,7 @@ public class Breakout extends GraphicsProgram {
 			} else {
 				return;
 			}
-		} else if((PADDLE_WIDTH + paddle.getX()) == getWidth()) {
+		} else if((PADDLE_WIDTH + paddle.getX()) >= getWidth()) {
 			GRect test = new GRect(50, 50, 50, 50);
 			test.setColor(Color.black);
 			add(test);
