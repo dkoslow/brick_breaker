@@ -162,5 +162,5 @@ public class Breakout extends GraphicsProgram {
 	private GOval ball;
 	private GRect paddle;
 	private double paddleMovement;
-	private double topLeftBall, topRightBall, bottomLeftBall, bottomRigthBall;
+	private GPoint topLeftBall, topRightBall, bottomLeftBall, bottomRigthBall;
 }
