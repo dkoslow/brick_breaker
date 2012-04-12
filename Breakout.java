@@ -62,6 +62,7 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		createBricks();
 		createPaddle();
+		addMouseListeners();
 		startGame();
 	}
 	private void createBricks() {
@@ -109,11 +110,9 @@ public class Breakout extends GraphicsProgram {
 	private void startGame() {
 		ball = new GOval( (getWidth() - BALL_RADIUS) / 2, (getHeight() - BALL_RADIUS) / 2, BALL_RADIUS, BALL_RADIUS );
 		add(ball);
-		paddleMovement();
 		startMovement();
 	}
-	private void paddleMovement() {
-		
+	private void mouseMoved(MouseEvent e) {
 	}
 	
 	private void startMovement() {
