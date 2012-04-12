@@ -90,6 +90,6 @@ public class Breakout extends GraphicsProgram {
 	private void createPaddle() {
 		GRect paddle = new GRect( getWidth() / 2, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT );
 		paddle.setColor(Color.black);
-		add(brick);
+		add(paddle);
 	}
 }
