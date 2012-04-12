@@ -73,6 +73,7 @@ public class Breakout extends GraphicsProgram {
 				brick.setColor(Color.white);
 				switch(y) { 
 				case 0: brick.setFillColor(Color.red);
+				break;
 				case 1: brick.setFillColor(Color.red);
 				case 2: brick.setFillColor(Color.orange);
 				case 3: brick.setFillColor(Color.orange);
