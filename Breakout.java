@@ -152,13 +152,13 @@ public class Breakout extends GraphicsProgram {
 		ballTopY = ball.getY();
 		ballBottomY = ball.getY() + 2 * BALL_RADIUS;
 		if (ballHitsWall()){
-//			METHOD
+//			Change trajectory
 		}
 		if (ballHitsBrick()) {
-//			METHOD
+//			Change trajectory
 		}
 		if (ballHitsBottom()) {
-//			METHOD
+//			End Round
 		}
 	}
 
