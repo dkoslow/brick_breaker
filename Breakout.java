@@ -92,6 +92,8 @@ public class Breakout extends GraphicsProgram {
 				break;
 				case 9: brick.setFillColor(Color.cyan);
 				break;
+				default: brick.setFillColor(Color.red);
+				break;
 				}
 				
 				add(brick);
