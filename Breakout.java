@@ -111,15 +111,15 @@ public class Breakout extends GraphicsProgram {
 		startMovement();
 	}
 	
-	private void startMovement() {
-		vy = 3.0;
-		vx = rgen.nextDouble(1.0,3.0);
-		if (rgen.nextBoolean(0.5)) vx = -vx;
-		while(true) {
-			ball.move(vx, vy);
-			pause(500);
-		}
-	}
+//	private void startMovement() {
+//		vy = 3.0;
+//		vx = rgen.nextDouble(1.0,3.0);
+//		if (rgen.nextBoolean(0.5)) vx = -vx;
+//		while(true) {
+//			ball.move(vx, vy);
+//			pause(500);
+//		}
+//	}
 
 	private double vx, vy;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
