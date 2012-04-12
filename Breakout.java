@@ -112,8 +112,6 @@ public class Breakout extends GraphicsProgram {
 		if(paddle.getX() <= 0) {
 			if ((e.getX() - lastX) > 0) {
 				paddleMovement = (e.getX() - lastX);
-			} else {
-				return;
 			}
 		} else if((PADDLE_WIDTH + paddle.getX()) >= getWidth()) {
 			GRect test = new GRect(50, 50, 50, 50);
@@ -121,8 +119,6 @@ public class Breakout extends GraphicsProgram {
 			add(test);
 			if ((e.getX() - lastX) < 0) {
 				paddleMovement = (e.getX() - lastX);
-			} else {
-				return;
 			}
 		} else {
 			paddleMovement = (e.getX() - lastX);
