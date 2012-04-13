@@ -62,7 +62,7 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		createBricks();
 		createPaddle();
-		GLabel lifecount = new GLabel("Lives:" + lives + "left",0, 0 )
+		GLabel lifecount = new GLabel("Lives:" + lives + "left",0, 0 );
 		addMouseListeners();
 		startGame();
 		if(brickCounter ==0) {
