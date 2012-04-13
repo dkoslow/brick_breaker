@@ -190,7 +190,8 @@ public class Breakout extends GraphicsProgram {
 		} else if(ballTopY <= 0) {
 			vy = -vy;
 		} else if (ballBottomY >= getHeight())
-			vy = -vy;
+			remove(ball);
+		lives = lives - 1
 	}
 
 	private double vx, vy;
