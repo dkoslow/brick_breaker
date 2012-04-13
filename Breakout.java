@@ -168,13 +168,13 @@ public class Breakout extends GraphicsProgram {
 	}
 	private void ballWallCheck() {
 		if(ballLeftX == 0) {
-			vx = -vx
+			vx = -vx;
 		} else if(ballRightX == getWidth()) {
-			vx = -vx
+			vx = -vx;
 		} else if(ballTopY == 0) {
-			vy = -vy
+			vy = -vy;
 		} else if (ballBottomY == getHeight())
-			vy = -vy
+			vy = -vy;
 	}
 
 	private double vx, vy;
