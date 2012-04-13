@@ -142,11 +142,11 @@ public class Breakout extends GraphicsProgram {
 			winGame();
 		} else if (lives <= 0) {
 			loseGame();
-		}else if(lives > 0) {
+		} else if(lives > 0) {
 			if(brickCounter > 0) {
 				startMovement();
 			}
-		}else {
+		} else {
 			null;
 		}
 	}
