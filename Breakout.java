@@ -122,6 +122,7 @@ public class Breakout extends GraphicsProgram {
 		add(paddle);
 	}
 	private void winGame() {
+		remove(ball);
 		GLabel endGame = new GLabel("You Win!");
 		endGame.setFont("Times-42");
 		add(endGame, (getWidth() - endGame.getWidth()) / 2, (getHeight() + endGame.getAscent()) / 2);
