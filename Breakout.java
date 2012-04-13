@@ -152,14 +152,26 @@ public class Breakout extends GraphicsProgram {
 		if (getElementAt(5.0, 5.0) != null) {
 			return;
 		}
-		
+	}
+	private GObject getCollidingObject() {
+		if(getElementAt() != null) {
+			return;
+		} else if getElementAt() != null) {
+			return;
+		} else if getElementAt() != null) {
+			return;
+		} else if getElementAt() != null) {
+			return;
+		}else {
+			return;
+		}
 	}
 		
 		
 		
 			
 			
-		}
+//		}
 //		if (ballHitsBrick()) {
 //			Change trajectory
 //		}
