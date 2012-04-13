@@ -70,6 +70,18 @@ public class Breakout extends GraphicsProgram {
 		add(lifeCount);
 		addMouseListeners();
 		startGame();
+		if(brickCounter == 0) {
+			GLabel endGame = new GLabel("You Win!");
+			endGame.setFont("Times-42");
+			add(endGame, (getWidth() - endGame.getWidth()) / 2, (getHeight() + endGame.getAscent()) / 2);
+			return;
+		}
+		if (lives == 0) {
+			GLabel gameOver = new GLabel("You Lose.");
+			gameOver.setFont("Times-42");
+			add(gameOver, (getWidth() - gameOver.getWidth()) / 2, (getHeight() + gameOver.getAscent()) / 2);
+			return;
+		}
 	}
 	private void createBricks() {
 		for ( int x = 0; x < NBRICKS_PER_ROW; x++ ) {
