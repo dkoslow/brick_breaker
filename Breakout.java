@@ -166,6 +166,9 @@ public class Breakout extends GraphicsProgram {
 			return null;
 		}
 	}
+	private void ballWallCheck() {
+		
+	}
 		
 		
 		
