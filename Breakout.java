@@ -152,7 +152,9 @@ public class Breakout extends GraphicsProgram {
 		ballTopY = ball.getY();
 		ballBottomY = ball.getY() + 2 * BALL_RADIUS;
 	}
-		if (public GObject getElementAt(5,5) == GOval ball) {
+		collisionObject = getElementAt(5,5);
+		
+		
 			
 			
 		}
@@ -171,4 +173,5 @@ public class Breakout extends GraphicsProgram {
 	private GRect paddle;
 	private double paddleMovement;
 	private double ballLeftX, ballRightX, ballTopY, ballBottomY;
+	private GObject collisionObject;
 }
