@@ -152,8 +152,9 @@ public class Breakout extends GraphicsProgram {
 		startMovement();
 	}
 	private void startMovement() {
-		void mouseClicked(MouseEvent e);
+		void mouseClicked(MouseEvent e) {
 		vy = 3.0;
+		}
 		vx = rgen.nextDouble(1.0,3.0);
 		if (rgen.nextBoolean(0.5)) vx = -vx;
 		while(true) {
