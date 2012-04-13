@@ -140,6 +140,20 @@ public class Breakout extends GraphicsProgram {
 		add(ball);
 		startMovement();
 	}
+	private void checkContext() {
+		if(brickCounter == 0) {
+			GLabel endGame = new GLabel("You Win!");
+			endGame.setFont("Times-42");
+			add(endGame, (getWidth() - endGame.getWidth()) / 2, (getHeight() + endGame.getAscent()) / 2);
+			return;
+		}
+		if (lives == 0) {
+			GLabel gameOver = new GLabel("You Lose.");
+			gameOver.setFont("Times-42");
+			add(gameOver, (getWidth() - gameOver.getWidth()) / 2, (getHeight() + gameOver.getAscent()) / 2);
+			return;
+		}
+	}
 	private void startMovement() {
 		vy = 3.0;
 		vx = rgen.nextDouble(1.0,3.0);
