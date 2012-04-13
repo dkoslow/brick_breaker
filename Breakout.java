@@ -75,10 +75,6 @@ public class Breakout extends GraphicsProgram {
 		}
 		if (lives == 0) {
 			loseGame();
-			GLabel gameOver = new GLabel("You Lose.");
-			gameOver.setFont("Times-42");
-			add(gameOver, (getWidth() - gameOver.getWidth()) / 2, (getHeight() + gameOver.getAscent()) / 2);
-			return;
 		}
 	}
 	private void createBricks() {
