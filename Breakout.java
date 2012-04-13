@@ -195,4 +195,5 @@ public class Breakout extends GraphicsProgram {
 	private double ballLeftX, ballRightX, ballTopY, ballBottomY;
 	private GObject collisionObject;
 	private GRect brick;
+	private int brickCounter;
 }
