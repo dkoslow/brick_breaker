@@ -152,8 +152,9 @@ public class Breakout extends GraphicsProgram {
 		ballTopY = ball.getY();
 		ballBottomY = ball.getY() + 2 * BALL_RADIUS;
 	}
-		if (ballHitsWall()){
-			Change trajectory
+		if (public GObject getElementAt(5,5) == GOval ball) {
+			
+			
 		}
 		if (ballHitsBrick()) {
 			Change trajectory
