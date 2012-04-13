@@ -67,10 +67,15 @@ public class Breakout extends GraphicsProgram {
 		add(lifeCount);
 		addMouseListeners();
 		startGame();
-		if(brickCounter ==0) {
+		if(brickCounter == 0) {
 			GLabel endGame = new GLabel("You Win!");
 			endGame.setFont("Times-42");
 			add(endGame, (getWidth() - endGame.getWidth()) / 2, (getHeight() + endGame.getAscent()) / 2);
+		}
+		if (lives == 0) {
+			GLabel gameOver = new GLabel("You Lose.");
+			gameOver.setFont("Times-42");
+			add(gameOver, (getwidth() - endGame.getWidth()) / 2, (getHeight() + endGame.getAscent()) / 2):
 		}
 		return;
 	}
