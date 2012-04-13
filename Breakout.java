@@ -138,10 +138,10 @@ public class Breakout extends GraphicsProgram {
 		lifeCount.setLabel( "Lives: " + lives + " left" );
 		ball = new GOval( (getWidth() - BALL_RADIUS) / 2, (getHeight() - BALL_RADIUS) / 2, BALL_RADIUS, BALL_RADIUS );
 		add(ball);
-		if(brickCounter == 0) {
+		if(brickCounter <= 0) {
 			winGame();
 		}
-		if (lives == 0) {
+		if (lives <= 0) {
 			loseGame();
 		}
 		startMovement();
