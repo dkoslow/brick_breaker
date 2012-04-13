@@ -150,7 +150,7 @@ public class Breakout extends GraphicsProgram {
 		ballTopY = ball.getY();
 		ballBottomY = ball.getY() + 2 * BALL_RADIUS;
 		if (getElementAt(5.0, 5.0) != null) {
-			
+			return;
 		
 	}
 		
