@@ -231,7 +231,7 @@ public class Breakout extends GraphicsProgram {
 	private GRect paddle;
 	private double paddleMovement;
 	private double ballLeftX, ballRightX, ballTopY, ballBottomY;
-	private int brickCounter;
+	private int brickCounter = 100;
 	private int lives = 3;
 	private GLabel lifeCount;
 }
