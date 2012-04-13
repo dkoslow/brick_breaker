@@ -166,6 +166,7 @@ public class Breakout extends GraphicsProgram {
 				vy= -vy;
 				remove(GObject);
 				brickCounter = brickCounter - 1;
+			}
 		}
 		
 	}
