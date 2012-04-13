@@ -149,12 +149,11 @@ public class Breakout extends GraphicsProgram {
 	private void startGame() {
 		ball = new GOval( (getWidth() - BALL_RADIUS) / 2, (getHeight() - BALL_RADIUS) / 2, BALL_RADIUS, BALL_RADIUS );
 		add(ball);
-		startMovement();
+		mouseClicked();
 	}
+	public void mouseClicked(MouseEvent e) {
 	private void startMovement() {
-		mouseClicked(MouseEvent e) {
 		vy = 3.0;
-		}
 		vx = rgen.nextDouble(1.0,3.0);
 		if (rgen.nextBoolean(0.5)) vx = -vx;
 		while(true) {
