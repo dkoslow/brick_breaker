@@ -60,6 +60,9 @@ public class Breakout extends GraphicsProgram {
 /* Method: run() */
 /** Runs the Breakout program. */
 	public void run() {
+		GLabel endGame = new GLabel("You Win!");
+		endGame.setFont("Times-42");
+		add(endGame, Label.CENTER, (getHeight() + endGame.getAscent()) / 2);
 		createBricks();
 		createPaddle();
 		addMouseListeners();
