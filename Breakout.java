@@ -152,7 +152,8 @@ public class Breakout extends GraphicsProgram {
 		ballBottomY = ball.getY() + 2 * BALL_RADIUS;
 		GObject collider = getCollidingObject();
 		if(collider == paddle) {
-			
+			vx = -vx;
+			vy= -xy
 		}
 		
 	}
