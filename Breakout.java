@@ -69,6 +69,7 @@ public class Breakout extends GraphicsProgram {
 			endGame.setFont("Times-42");
 			add(endGame, (getWidth() - endGame.getWidth()) / 2, (getHeight() + endGame.getAscent()) / 2);
 		}
+		return;
 	}
 	private void createBricks() {
 		for ( int x = 0; x < NBRICKS_PER_ROW; x++ ) {
