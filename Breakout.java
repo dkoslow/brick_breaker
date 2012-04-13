@@ -67,18 +67,6 @@ public class Breakout extends GraphicsProgram {
 		createPaddle();
 		addMouseListeners();
 		startGame();
-		if(brickCounter == 0) {
-			GLabel endGame = new GLabel("You Win!");
-			endGame.setFont("Times-42");
-			add(endGame, (getWidth() - endGame.getWidth()) / 2, (getHeight() + endGame.getAscent()) / 2);
-			return;
-		}
-		if (lives == 0) {
-			GLabel gameOver = new GLabel("You Lose.");
-			gameOver.setFont("Times-42");
-			add(gameOver, (getWidth() - gameOver.getWidth()) / 2, (getHeight() + gameOver.getAscent()) / 2);
-			return;
-		}
 	}
 	private void createBricks() {
 		for ( int x = 0; x < NBRICKS_PER_ROW; x++ ) {
@@ -147,6 +135,7 @@ public class Breakout extends GraphicsProgram {
 		GLabel lifeCount = new GLabel("Lives: " + lives + " left",10 ,10 );
 		lifeCount.setFont("Times-12");
 		add(lifeCount);
+		checkContext();
 		ball = new GOval( (getWidth() - BALL_RADIUS) / 2, (getHeight() - BALL_RADIUS) / 2, BALL_RADIUS, BALL_RADIUS );
 		add(ball);
 		startMovement();
