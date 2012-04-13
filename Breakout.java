@@ -65,7 +65,7 @@ public class Breakout extends GraphicsProgram {
 		addMouseListeners();
 		startGame();
 		if(brickCounter ==0) {
-			Glabel endGame = new Glabel("You Win!");
+			Glabel label = new Glabel("You Win!");
 			endGame.setFont("Times-42");
 			
 		}
