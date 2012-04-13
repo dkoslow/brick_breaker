@@ -154,6 +154,7 @@ public class Breakout extends GraphicsProgram {
 	}
 	private void loseGame() {
 		remove(ball);
+		quit;
 		GLabel gameOver = new GLabel("You Lose.");
 		gameOver.setFont("Times-42");
 		add(gameOver, (getWidth() - gameOver.getWidth()) / 2, (getHeight() + gameOver.getAscent()) / 2);
