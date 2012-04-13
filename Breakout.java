@@ -112,18 +112,6 @@ public class Breakout extends GraphicsProgram {
 		paddle.setColor(Color.black);
 		add(paddle);
 	}
-	private void winGame() {
-		remove(ball);
-		GLabel endGame = new GLabel("You Win!");
-		endGame.setFont("Times-42");
-		add(endGame, (getWidth() - endGame.getWidth()) / 2, (getHeight() + endGame.getAscent()) / 2);
-	}
-	private void loseGame() {
-		remove(ball);
-		GLabel gameOver = new GLabel("You Lose.");
-		gameOver.setFont("Times-42");
-		add(gameOver, (getWidth() - gameOver.getWidth()) / 2, (getHeight() + gameOver.getAscent()) / 2);
-	}
 	public void mouseMoved(MouseEvent e) {
 		int x;
 		x = 0;
