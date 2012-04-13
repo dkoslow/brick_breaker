@@ -161,7 +161,7 @@ public class Breakout extends GraphicsProgram {
 		} else if getElementAt(ballLeftX, ballBottomY) != null) {
 			return getElementAt(ballLeftX, ballBottomY);
 		} else if getElementAt(ballRightX, ballBottomY) != null) {
-			return;
+			return getElementAt(ballRightX, ballBottomY);
 		}else {
 			return;
 		}
