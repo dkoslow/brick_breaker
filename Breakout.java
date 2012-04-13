@@ -202,7 +202,7 @@ public class Breakout extends GraphicsProgram {
 			vy = -vy;
 		} else if (ballBottomY >= getHeight()) {
 			remove(ball);
-			lives = lives - 1;
+			lives--;
 			startGame();
 		}
 	}
