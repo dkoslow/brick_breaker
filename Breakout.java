@@ -220,5 +220,5 @@ public class Breakout extends GraphicsProgram {
 	private double ballLeftX, ballRightX, ballTopY, ballBottomY;
 	private int brickCounter;
 	private int lives = 3;
-	private GLabel lifeCount
+	private GLabel lifeCount;
 }
