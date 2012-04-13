@@ -176,19 +176,6 @@ public class Breakout extends GraphicsProgram {
 		} else if (ballBottomY == getHeight())
 			move up
 	}
-		
-		
-		
-			
-			
-//		}
-//		if (ballHitsBrick()) {
-//			Change trajectory
-//		}
-//		if (ballHitsBottom()) {
-//			End Round
-//		}
-//	}
 
 	private double vx, vy;
 	private double lastX;
