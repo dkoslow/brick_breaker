@@ -198,9 +198,11 @@ public class Breakout extends GraphicsProgram {
 			vx = -vx;
 		} else if(ballTopY <= 0) {
 			vy = -vy;
-		} else if (ballBottomY >= getHeight())
+		} else if (ballBottomY >= getHeight()) {
 			remove(ball);
-		lives = lives - 1;
+			lives = lives - 1;
+			run();
+		}
 	}
 
 	private double vx, vy;
