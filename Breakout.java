@@ -71,10 +71,7 @@ public class Breakout extends GraphicsProgram {
 		addMouseListeners();
 		startGame();
 		if(brickCounter == 0) {
-			GLabel endGame = new GLabel("You Win!");
-			endGame.setFont("Times-42");
-			add(endGame, (getWidth() - endGame.getWidth()) / 2, (getHeight() + endGame.getAscent()) / 2);
-			return;
+			winGame();
 		}
 		if (lives == 0) {
 			GLabel gameOver = new GLabel("You Lose.");
@@ -123,6 +120,12 @@ public class Breakout extends GraphicsProgram {
 		paddle = new GRect( getWidth() / 2 - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT );
 		paddle.setColor(Color.black);
 		add(paddle);
+	}
+	private void winGame() {
+		GLabel endGame = new GLabel("You Win!");
+		endGame.setFont("Times-42");
+		add(endGame, (getWidth() - endGame.getWidth()) / 2, (getHeight() + endGame.getAscent()) / 2);
+		return;
 	}
 	public void mouseMoved(MouseEvent e) {
 		int x;
