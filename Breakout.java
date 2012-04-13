@@ -147,7 +147,7 @@ public class Breakout extends GraphicsProgram {
 				startMovement();
 			}
 		} else {
-			null;
+			return;
 		}
 	}
 	private void winGame() {
