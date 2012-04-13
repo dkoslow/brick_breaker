@@ -172,7 +172,7 @@ public class Breakout extends GraphicsProgram {
 		} else if(ballRightX == getWidth()) {
 			vx = -vx
 		} else if(ballTopY == 0) {
-			move down
+			vy = -vy
 		} else if (ballBottomY == getHeight())
 			move up
 	}
