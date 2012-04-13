@@ -144,7 +144,11 @@ public class Breakout extends GraphicsProgram {
 		if (lives <= 0) {
 			loseGame();
 		}
-		startMovement();
+		if(lives > 0) {
+			if(brickCounter > 0) {
+				startMovement();
+			}
+		}
 	}
 	private void winGame() {
 		remove(ball);
