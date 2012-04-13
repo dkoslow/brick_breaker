@@ -64,6 +64,9 @@ public class Breakout extends GraphicsProgram {
 		createPaddle();
 		addMouseListeners();
 		startGame();
+		if(brickCounter ==0) {
+			return;
+		}
 	}
 	private void createBricks() {
 		for ( int x = 0; x < NBRICKS_PER_ROW; x++ ) {
