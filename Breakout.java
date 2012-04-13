@@ -126,7 +126,6 @@ public class Breakout extends GraphicsProgram {
 		GLabel endGame = new GLabel("You Win!");
 		endGame.setFont("Times-42");
 		add(endGame, (getWidth() - endGame.getWidth()) / 2, (getHeight() + endGame.getAscent()) / 2);
-		return;
 	}
 	public void mouseMoved(MouseEvent e) {
 		int x;
