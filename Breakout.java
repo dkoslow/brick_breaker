@@ -154,13 +154,13 @@ public class Breakout extends GraphicsProgram {
 		}
 	}
 	private GObject getCollidingObject() {
-		if(getElementAt() != null) {
+		if(getElementAt(ballLeftX, ballTopY) != null) {
 			return;
-		} else if getElementAt() != null) {
+		} else if getElementAt(ballRightX, ballTopY) != null) {
 			return;
-		} else if getElementAt() != null) {
+		} else if getElementAt(ballLeftX, ballBottomY) != null) {
 			return;
-		} else if getElementAt() != null) {
+		} else if getElementAt(ballRightX, ballBottomY) != null) {
 			return;
 		}else {
 			return;
