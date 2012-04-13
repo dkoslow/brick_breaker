@@ -155,7 +155,9 @@ public class Breakout extends GraphicsProgram {
 			vx = -vx;
 			vy= -vy;
 		} else if(collider == brick) {
-			
+			vx = -vx;
+			vy= -vy;
+			remove(brick);
 		}
 		
 	}
