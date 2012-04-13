@@ -182,13 +182,13 @@ public class Breakout extends GraphicsProgram {
 		}
 	}
 	private void ballWallCheck() {
-		if(ballLeftX == 0) {
+		if(ballLeftX <= 0) {
 			vx = -vx;
-		} else if(ballRightX == getWidth()) {
+		} else if(ballRightX >= getWidth()) {
 			vx = -vx;
-		} else if(ballTopY == 0) {
+		} else if(ballTopY <= 0) {
 			vy = -vy;
-		} else if (ballBottomY == getHeight())
+		} else if (ballBottomY >= getHeight())
 			vy = -vy;
 	}
 
