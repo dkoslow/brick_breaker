@@ -141,6 +141,7 @@ public class Breakout extends GraphicsProgram {
 			ball.move(vx, vy);
 			pause(500);
 			ballCollisionCheck();
+			ballWallCheck();
 		}
 	}
 	
@@ -150,6 +151,7 @@ public class Breakout extends GraphicsProgram {
 		ballTopY = ball.getY();
 		ballBottomY = ball.getY() + 2 * BALL_RADIUS;
 		GObject collider = getCollidingObject();
+		
 	}
 	private GObject getCollidingObject() {
 		if(getElementAt(ballLeftX, ballTopY) != null) {
