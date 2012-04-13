@@ -135,7 +135,7 @@ public class Breakout extends GraphicsProgram {
 		x++;
 	}
 	private void startGame() {
-		endGame.setLabel( "Lives: " + lives + " left" );
+		lifeCount.setLabel( "Lives: " + lives + " left" );
 		checkContext();
 		ball = new GOval( (getWidth() - BALL_RADIUS) / 2, (getHeight() - BALL_RADIUS) / 2, BALL_RADIUS, BALL_RADIUS );
 		add(ball);
