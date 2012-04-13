@@ -57,6 +57,9 @@ public class Breakout extends GraphicsProgram {
 /** Number of turns */
 	private static final int NTURNS = 3;
 
+/** Speeds up movement with lower numbers */
+	private static final int PAUSE_LENGTH = 10;
+
 /* Method: run() */
 /** Runs the Breakout program. */
 	public void run() {
