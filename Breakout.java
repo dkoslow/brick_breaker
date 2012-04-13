@@ -65,7 +65,7 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		createBricks();
 		createPaddle();
-		lifeCount = GLabel("Lives: " + lives + " left",10 ,10 );
+		lifeCount = new GLabel("Lives: " + lives + " left",10 ,10 );
 		lifeCount.setFont("Times-12");
 		add(lifeCount);
 		addMouseListeners();
