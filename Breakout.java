@@ -152,7 +152,7 @@ public class Breakout extends GraphicsProgram {
 		startMovement();
 	}
 	private void startMovement() {
-		if(mousePressed(MouseEvent)) {
+		if(mouseClicked(MouseEvent e)) {
 			
 		}
 		vy = 3.0;
