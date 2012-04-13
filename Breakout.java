@@ -65,6 +65,9 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		createBricks();
 		createPaddle();
+		GLabel lifeCount = new GLabel("Lives: " + lives + " left",10 ,10 );
+		lifeCount.setFont("Times-12");
+		add(lifeCount);
 		addMouseListeners();
 		startGame();
 	}
@@ -132,9 +135,6 @@ public class Breakout extends GraphicsProgram {
 		x++;
 	}
 	private void startGame() {
-		GLabel lifeCount = new GLabel("Lives: " + lives + " left",10 ,10 );
-		lifeCount.setFont("Times-12");
-		add(lifeCount);
 		checkContext();
 		ball = new GOval( (getWidth() - BALL_RADIUS) / 2, (getHeight() - BALL_RADIUS) / 2, BALL_RADIUS, BALL_RADIUS );
 		add(ball);
