@@ -169,9 +169,12 @@ public class Breakout extends GraphicsProgram {
 	private void ballWallCheck() {
 		if (ballLeftX == 0) {
 			move right
-		} else if(ballRightX == 0) {
+		} else if(ballRightX == getWidth()) {
 			move left
-		}
+		} else if(ballTopY == 0) {
+			move down
+		} else if (ballBottomY == getHeight())
+			move up
 	}
 		
 		
