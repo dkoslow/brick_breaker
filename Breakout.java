@@ -140,7 +140,7 @@ public class Breakout extends GraphicsProgram {
 		while(true) {
 			ball.move(vx, vy);
 			pause(500);
-			(ballCollisionCheck();
+			ballCollisionCheck();
 		}
 	}
 	
