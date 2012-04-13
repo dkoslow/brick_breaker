@@ -179,7 +179,6 @@ public class Breakout extends GraphicsProgram {
 			ballWallCheck();
 		}
 	}
-	
 	private void ballCollisionCheck() {
 		ballLeftX = ball.getX();
 		ballRightX = ball.getX()+ 2 * BALL_RADIUS;
