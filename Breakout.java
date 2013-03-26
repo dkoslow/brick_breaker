@@ -1,12 +1,3 @@
-/*
- * File: Breakout.java
- * -------------------
- * Name:
- * Section Leader:
- * 
- * This file will eventually implement the game of Breakout.
- */
-
 import acm.graphics.*;
 import acm.program.*;
 import acm.util.*;
@@ -60,8 +51,6 @@ public class Breakout extends GraphicsProgram {
 /** Speeds up movement with lower numbers */
 	private static final int PAUSE_LENGTH = 10;
 
-/* Method: run() */
-/** Runs the Breakout program. */
 	public void run() {
 		createBricks();
 		createPaddle();
